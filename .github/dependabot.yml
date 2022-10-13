@@ -6,7 +6,8 @@ updates:
       - dependency-name: "Microsoft.Extensions.*"
         versions: ["5.0"]
     schedule:
-      interval: daily
+      interval: weekly
+      day: monday
       timezone: Europe/London
     open-pull-requests-limit: 10
     rebase-strategy: disabled
@@ -14,7 +15,8 @@ updates:
   - package-ecosystem: terraform
     directory: "/deploy/azure/app/kube"
     schedule:
-      interval: daily
+      interval: weekly
+      day: monday
       timezone: Europe/London
     open-pull-requests-limit: 10
     rebase-strategy: disabled
